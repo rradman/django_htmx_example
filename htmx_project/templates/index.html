@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+        {% include "sidebar.html" %}
+        <div class="body-wrapper">
+            {% include "header.html" %}
+            <div class="container-fluid">
+                {% include "row_1.html" %}
+                {% include "row_2.html" %}
+                {% include "row_3.html" %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
